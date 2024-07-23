@@ -70,6 +70,7 @@ void OnEvent(const EVENT_RECORD& aRecord, const krabs::trace_context& aTraceCont
 			break;
 		case AllocAndLink_End:
 			monitor.OnAllocAndLinkEnd(aRecord);
+			break;
 		case UnlinkAndFree_Start:
 			monitor.OnUnlinkAndFreeStart(aRecord);
 			break;
